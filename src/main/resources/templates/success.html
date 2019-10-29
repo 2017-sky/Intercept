@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>身份证号</td>
+        <td>名字</td>
+        <td>性别</td>
+        <td>电话号</td>
+    </tr>
+    <tr >
+        <td th:text="${user.idcard}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.sex}"></td>
+        <td th:text="${user.phone}"></td>
+
+    </tr>
+
+
+</table>
+</body>
+</html>

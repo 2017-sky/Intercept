@@ -1,0 +1,22 @@
+server:
+  port: 8801
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/homework?serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  config-location: classpath:mybatis/sqlMapConfig.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+logging:
+  level:
+    root: info
+    nuc.config: debug
+    org.springframework.security: warn
+  file: 1.log
